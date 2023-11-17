@@ -22,7 +22,7 @@ provider "minikube" {
 
 resource "minikube_cluster" "test" {
   vm           = true
-  cluster_name = "terraform-provider-minikube-test"
+  cluster_name = "tf-provider-minikube-test"
   cni          = "bridge" # Allows pods to communicate with each other via DNS
   embed_certs  = true
   memory       = "4g"
